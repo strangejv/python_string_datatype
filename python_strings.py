@@ -7,10 +7,10 @@ my_first_name = 'Javier'
 my_last_name = 'Villegas'
 #       -set this equal to your last name
 #   - my_year_of_birth
-my_birth_year = '2001'
+my_birth_year = 2001
 #       -set this equal to your birth year (doesn't have to be real should be less then 100 yrs ago)
 #   - current_year
-current_year = '2024'
+current_year = 2024
 #       -set this equal to 2020
 
 
@@ -29,7 +29,7 @@ print(my_last_name[-7])
 #       - first two letter of your first name (use the +index)
 print(my_first_name[0:2])
 #       - second two letter of your last name (use the -index)
-print(my_last_name[-8:4])
+print(my_last_name[-8:3])
 
 
 
@@ -61,5 +61,10 @@ print ('/t' + my_last_name + str (current_year))
 # TODO String methods
 #   - Print the following items (one per line) (print using variables)
 #       - first name and last name in lower case
+lc_first_name = my_first_name.casefold()
+lc_last_name = my_last_name.casefold()
+print(lc_first_name, lc_last_name)
 #       - length of last name
+print(len(my_last_name))
 #       - first name and last name all in upper case
+print(my_first_name.upper(), my_last_name.upper())
